@@ -5,9 +5,10 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', [UserController::class,'login']);
+Route::post('/', [UserController::class,'postLogin']);
 
 Route::get('/login', [UserController::class,'login'])->name('login');
-Route::post('/', [UserController::class,'postLogin']);
+Route::post('/login', [UserController::class,'postLogin']);
 
 Route::get('/register', [UserController::class,'register'])->name('register');
 Route::post('/register', [UserController::class,'postRegister']);
