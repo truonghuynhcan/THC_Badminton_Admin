@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function login(){
+        if(Auth::check()) { // Kiểm tra nếu người dùng đã đăng nhập
+            return back();
+        }
         return view('page.login');
     }
     public function postLogin(Request $req){
@@ -36,6 +39,9 @@ class UserController extends Controller
     }
     
     public function register(){
+        if(Auth::check()) { // Kiểm tra nếu người dùng đã đăng nhập
+            return back();
+        }
         return view('page.register');
     }
     public function postRegister(Request $req){
