@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_user');
             $table->string('img');
             $table->string('title');
+            $table->string('slug')->nullable();
             $table->string('sub_title')->nullable();
             $table->date('date')->comment('ngày viết bài');
             $table->longText('content');

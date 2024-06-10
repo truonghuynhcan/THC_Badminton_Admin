@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add News Post</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <script src="https://kit.fontawesome.com/0e14ebdea1.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-body-secondary">
+    <div class="container">
+        <section class="bg-body-tertiary p-3 rounded mb-3">
+            <div class="d-flex">
+                <label for="exampleTitle" class="form-label h3 d-block">Title <span class="text-danger me-auto">(*)</span></label>
+
+                <button class="ms-auto form-label btn btn-primary px-4">Post</button>
+            </div>
+            <input type="text" class="form-control form-control-lg" id="exampleTitle" placeholder="Tiêu đề của bài viết" required>
+        </section>
+        <section class="mb-3">
+            <div class="row">
+                <div class="col-8">
+                    <div class="bg-body-tertiary p-3 rounded">
+                        <div class="mb-3">
+                            <label for="exampleSlug" class="form-label">Slug</label>
+                            <input type="text" class="form-control " id="exampleSlug" placeholder="tieu-de-cua-bai-viet">
+                        </div>
+                        <div class="mb-3">
+
+                            <label for="exampleTitle" class="form-label">Sub Title <span class="text-danger">(*)</span></label>
+                            <textarea class="form-control" id="subTitle" rows="3"
+                                placeholder="mô tả ngắn - không quá 255 ký tự"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-body-tertiary p-3 h-100 rounded">
+                        <div class="mb-3">
+                            <label for="inputGroupFile02" class="form-label">Danh mục <span class="text-danger">(*)</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Chọn danh mục</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputGroupFile02" class="form-label">Hình ảnh <span class="text-danger">(*)</span></label>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary p-3 rounded mb-3">
+            <label for="exampleContent" class="form-label">Content <span class="text-danger">(*)</span></label>
+            <textarea class="form-control" id="exampleContent" rows="20"></textarea>
+        </section>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

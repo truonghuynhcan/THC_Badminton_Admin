@@ -9,10 +9,11 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function profile(){
+        $user = Auth::user();
+        return view('user.profile',['user' =>$user]);
+    }
     public function login(){
-        if(Auth::check()) { // Kiểm tra nếu người dùng đã đăng nhập
-            return back();
-        }
         return view('page.login');
     }
     public function postLogin(Request $req){
@@ -27,6 +28,10 @@ class UserController extends Controller
         }else{
             session()->put('warning','Tài khoản không tồn tại!');
             return back();
+        }
+        if ($user->role!='1'){ 
+            // session()->put('warning','Tài khoản không có quyền truy cập!');
+            return back()->with('warning','Tài khoản không có quyền truy cập!');
         }
 
         if ($canLogin) {//cho đăng nhập

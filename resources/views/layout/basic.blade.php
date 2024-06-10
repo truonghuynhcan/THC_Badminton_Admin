@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="" data-theme="dark">
+<html lang="en" data-bs-theme="dark" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -8,8 +8,10 @@
 
     <script src="https://kit.fontawesome.com/0e14ebdea1.js" crossorigin="anonymous"></script>
     <!-- Theme CSS -->
+    
     <link rel="stylesheet" href="{{ asset('css/theme.bundle.css') }}" id="stylesheetLTR">
     <link rel="stylesheet" href="{{ asset('css/theme.rtl.bundle.css') }}" id="stylesheetRTL">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" id="stylesheetRTL">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preload" as="style"

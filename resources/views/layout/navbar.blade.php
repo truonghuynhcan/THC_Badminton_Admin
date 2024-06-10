@@ -60,12 +60,12 @@
                     <div class="collapse" id="PostsCollapse">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link ">
+                                <a href="{{route('allPost')}}" class="nav-link ">
                                     <span class="text-capitalize">All Post</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="dashboard-ecommerce.html" class="nav-link active">
+                                <a href="{{route('addNewPost')}}" class="nav-link active">
                                     <span class="text-capitalize">Add new post</span>
                                 </a>
                             </li>
@@ -118,7 +118,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="dashboard-crm.html" class="nav-link ">
+                                <a href="{{route('procategory')}}" class="nav-link ">
                                     <span class="text-capitalize">categories</span>
                                 </a>
                             </li>
@@ -144,7 +144,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="dashboard-crm.html" class="nav-link ">
+                                <a href="{{route('profile')}}" class="nav-link ">
                                     <span class="text-capitalize">Profile</span>
                                 </a>
                             </li>
